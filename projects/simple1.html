@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple website</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      nav {
+        background-color: rgb(2, 26, 46);
+        color: white;
+        padding: 1rem 0;
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul li {
+        list-style: none;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+      }
+      nav ul li:hover {
+        background-color: rgb(19, 113, 181);
+        border-radius: 0.5rem;
+      }
+      .main {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto;
+        gap: 1rem;
+      
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background-color: rgb(176 185 204 / 33%);
+      }
+      .main img {
+        width: 100%;
+      }
+
+      @media screen and (max-width:460px){
+        .main{
+            width: 85%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main">
+        <p>October 26</p>
+        <img
+          src="https://img.freepik.com/free-photo/cute-domestic-kitten-sitting-leaf-generative-ai_188544-8316.jpg"
+          alt="cat image"
+        />
+        <h2>This is my first Project</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          doloribus possimus modi esse, non quos ducimus vel quo cum perferendis
+          quasi!
+        </p>
+      </div>
+
+      
+    </section>
+  </body>
+</html>

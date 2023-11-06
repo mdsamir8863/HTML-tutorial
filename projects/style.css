@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    box-shadow:3px 3px 5px 3px  rgb(56, 54, 54)
+}
+
+.nav>h1 {
+    font-size: 25px;
+    /* margin-left: 20px; */
+}
+
+.nav>button {
+    padding: 15px 30px;
+    background-color: tomato;
+    border: none;
+    /* margin-right: 20px; */
+}
+
+.Mydiv {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mydiv1 {
+    width: 40%;
+    height: 60vh;
+    gap: 4px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Mydiv2 {
+    width: 40%;
+    height: 60vh;
+}
+
+.Mydiv2>img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 30px;
+    border: 10px solid pink;
+    padding: 12px;
+}
+
+.Mydiv1>h1 {
+    font-size: 30px;
+}
+
+.Mydiv1>p {
+    font-size: 15px;
+}
+
+.btn {
+    width: 20%;
+    height: 30px;
+    background-color: blue;
+    border: none;
+
+}

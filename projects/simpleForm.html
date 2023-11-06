@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Averia Serif Libre";
+        margin: auto;
+      }
+      input {
+        border: 1px solid;
+      }
+      label, input{
+        margin-bottom: 1rem;
+      }
+
+      .Form {
+        align-items: start;
+        margin: auto;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      fieldset {
+        width: 400px;
+        display: flex;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Login</legend>
+      <div class="Form">
+        <label for="name">Full name:</label>
+        <input id="name" placeholder="Full Name" type="text" />
+
+        <div>
+        </div>
+        
+        <div>
+          <label for="male" >Male</label>
+          <input id="male"  name="gander" type="radio" />
+          <label for="female">Female</label>
+          <input id="female" name="gander" type="radio" />
+        </div>
+
+        <div>
+          <label for="id" >Employee Id:</label>
+          <input id="id" placeholder="Input Your Id" type="text" />
+        </div>
+
+        <div>
+          <label for="desig">Designation:</label>
+          <input id="desig" placeholder="Web Developer" type="text" />
+        </div>
+
+        <div>
+          <label for="number">Mobile Number:</label>
+          <input id="number" placeholder="input Your Number" type="text" />
+        </div>
+
+        
+      </div>
+    </fieldset>
+  </body>
+</html>

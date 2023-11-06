@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border: 1px solid blue; 
+    
+}
+
+.main {
+    display: flex;
+    padding: 0 2rem;
+    border: 1px solid blue;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+}
+
+img {
+    width: 23rem;
+}  

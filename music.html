@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="music-player">
+      <audio id="myAudio" controls autoplay>
+        <source
+          src="./lofi-chill-medium-version-159456.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <button id="playButton"><i id="playIcon" class="fas fa-play"></i></button>
+    </div>
+    <script>
+      const audio = document.getElementById("myAudio");
+      const playButton = document.getElementById("playButton");
+      const playIcon = document.getElementById("playIcon");
+
+      playButton.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          playIcon.classList.remove("fa-play");
+          playIcon.classList.add("fa-pause");
+        } else {
+          audio.pause();
+          playIcon.classList.remove("fa-pause");
+          playIcon.classList.add("fa-play");
+        }
+      });
+    </script>
+  </body>
+</html>
